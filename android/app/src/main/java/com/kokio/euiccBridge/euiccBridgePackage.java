@@ -1,4 +1,4 @@
-package com.kokio.euiccBridge;
+package com.kokio.EuiccBridge;
 
 import androidx.annotation.NonNull;
 

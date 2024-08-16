@@ -1,4 +1,4 @@
-package com.kokio.euiccBridge;
+package com.kokio.EuiccBridge;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
@@ -40,7 +40,7 @@ public class euiccBridgeModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "euiccBridge"; // Name exposed to React Native
+        return "euiccBridgeModule"; // Name exposed to React Native
     }
 
     // Getting the EID
