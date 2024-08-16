@@ -15,6 +15,7 @@ import com.facebook.soloader.SoLoader
 
 import com.kokio.EuiccBridge.euiccBridgePackage
 import com.kokio.DeviceInfoBridge.simDataPackage
+import com.kokio.IdentityManager.identityManagerPackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -26,6 +27,7 @@ class MainApplication : Application(), ReactApplication {
               // add(MyReactNativePackage())
               add(euiccBridgePackage())
               add(simDataPackage())
+              add(identityManagerPackage())
             }
 
         override fun getJSMainModuleName(): String = "index"
