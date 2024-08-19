@@ -1,3 +1,5 @@
+// Package name ideally should be com.<company_name>.<app_name>
+// Move to this naming convention when parent company name is finalised
 package com.kokio
 
 import android.app.Application
@@ -16,6 +18,7 @@ import com.facebook.soloader.SoLoader
 import com.kokio.EuiccBridge.euiccBridgePackage
 import com.kokio.DeviceInfoBridge.simDataPackage
 import com.kokio.IdentityManager.identityManagerPackage
+import com.kokio.SecurityBridge.securityBridgePackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -28,6 +31,7 @@ class MainApplication : Application(), ReactApplication {
               add(euiccBridgePackage())
               add(simDataPackage())
               add(identityManagerPackage())
+              add(securityBridgePackage())
             }
 
         override fun getJSMainModuleName(): String = "index"
