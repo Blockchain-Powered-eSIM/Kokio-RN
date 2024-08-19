@@ -1,0 +1,1 @@
+- Logic for interacting with external services, e.g., auth, analytics
