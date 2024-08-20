@@ -1,0 +1,1 @@
+- App-wide configurations, e.g., theme, constants

@@ -1,0 +1,1 @@
+- State management, e.g., Redux slices, context providers
