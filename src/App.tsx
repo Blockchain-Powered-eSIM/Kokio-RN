@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import './global.css';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -25,12 +26,16 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+// ! used to verify that nativewind doesn't have errors
+// import {verifyInstallation} from 'nativewind'; 
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  // verifyInstallation();
   return (
     <View style={styles.sectionContainer}>
       <Text
