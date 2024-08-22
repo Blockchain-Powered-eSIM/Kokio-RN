@@ -15,7 +15,7 @@ public class securityBridgePackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new screenLockAuthModule(reactContext));
+        modules.add(new screenLockModule(reactContext));
         return modules;
     }
 
