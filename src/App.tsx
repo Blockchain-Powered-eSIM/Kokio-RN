@@ -27,7 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 // ! used to verify that nativewind doesn't have errors
-// import {verifyInstallation} from 'nativewind'; 
+// import {verifyInstallation} from 'nativewind';
 
 type SectionProps = PropsWithChildren<{
   title: string;
