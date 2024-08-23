@@ -1,10 +1,10 @@
-import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from 'react';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 export type ButtonProps = {
   title: string;
   onPress: () => void;
 };
-export const Button = ({ title, onPress }: ButtonProps) => {
+export const Button = ({title, onPress}: ButtonProps) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
       <Text style={styles.text}>{title}</Text>
@@ -13,16 +13,16 @@ export const Button = ({ title, onPress }: ButtonProps) => {
 };
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "blue",
+    backgroundColor: 'blue',
     marginTop: 15,
     paddingVertical: 15,
     borderRadius: 15,
-    width: "80%",
-    alignItems: "center",
+    width: '80%',
+    alignItems: 'center',
   },
   text: {
-    color: "white",
-    fontWeight: "700",
+    color: 'white',
+    fontWeight: '700',
     fontSize: 18,
   },
 });
